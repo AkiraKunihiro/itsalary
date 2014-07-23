@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Color scheme is taken from 'FLAT UI' http://designmodo.github.io/Flat-UI/ */
+
+body {
+	height:100%;
+	font-family: Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	font-weight:lighter;
+	padding: 0;
+	margin: 0;
+	background-color: #ecf0f1;
+	color:#34495e;
+}
+
+h1 {
+display: block;
+font-size: 2em;
+margin: 0.67em auto;
+-webkit-margin-before: 0.67em;
+-webkit-margin-after: 0.67em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+#container {
+	margin:0 auto;
+	width:100%;
+	height:100%;
+	min-height:100%;
+}
+
+#container h1#title {
+	clear:left;
+	font-size:1.8em;
+	text-align:center;
+	display:block;
+	width:770px;
+	margin-left:120px;
+	color:#ffffff;
+	background-color:#415b76;
+	border-color:#415b76;
+	padding:10px 19px;
+	border-radius:6px;
+	font-weight:bold;
+}
+
+#note {
+	margin-left:150px;
+	width:450px;
+	background-color:#e5e333;
+	border-radius:6px;
+	padding:10px 19px;
+	margin-left:150px;
+	line-height:1.5em;
+	font-size:1em;
+	clear:left;
+}
+
+#main {
+	margin-top: -40px;
+}
+
+#chart .background {
+	fill:#eeeeee;
+}
+
+#footer {
+	margin-left:150px;
+	font-size: 0.8em;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+circle {
+  fill-opacity:0.7;
+  cursor:pointer;
+}
+
+.legend{
+	font-size:0.8em;
+	cursor:pointer;
+}
+
+#tooltip {
+	position: absolute;
+	display:inherit;
+	
+	height:auto;
+	font-size: 12px;
+	padding:10px;
+	color: #ffffff;
+	background-color:#34495e;
+	    -webkit-border-radius:10px;
+	    -moz-border-radius:10px;
+	border-radius:10px;
+	    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+	pointer-events: none;
+}
+#tooltip.hidden {
+	display:none;
+}
+#tooltip p {
+	font-size: 12px;
+	line-height:18px;
+	margin: 2px 4px 2px 4px;
+}
+#tooltip .arrow {
+	/*CSSのみで三角形を作る　http://ideahacker.net/2013/07/26/5962/*/
+	content:"";
+	position: absolute;
+    bottom: -24px;
+    left 15%;
+	border: 12px solid transparent;
+	border-top: 12px solid #000;
+}
