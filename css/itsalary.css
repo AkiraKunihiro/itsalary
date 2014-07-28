@@ -3,12 +3,14 @@
 /* Color scheme is taken from 'FLAT UI' http://designmodo.github.io/Flat-UI/ */
 
 body {
-	height:100%;
+	margin: 0;
+    width:960px;
+    height:500px;
 	font-family: Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 	font-weight:lighter;
 	padding: 0;
 	margin: 0;
-	background-color: #ecf0f1;
+	background-color: #ffffff;
 	color:#34495e;
 }
 
@@ -30,12 +32,13 @@ margin: 0.67em auto;
 }
 
 #container h1#title {
-	clear:left;
-	font-size:1.8em;
+    position:absolute;
+    top:5px;
+	font-size:1.2em;
 	text-align:center;
 	display:block;
-	width:770px;
-	margin-left:120px;
+	width:500px;
+	margin-left:200px;
 	color:#ffffff;
 	background-color:#415b76;
 	border-color:#415b76;
@@ -45,19 +48,20 @@ margin: 0.67em auto;
 }
 
 #note {
-	margin-left:150px;
+    position:absolute;
+    top:80px;
 	width:450px;
-	background-color:#e5e333;
+	background-color:#ecf0f1;
+    background-color:#ffffff;
 	border-radius:6px;
 	padding:10px 19px;
-	margin-left:150px;
-	line-height:1.5em;
-	font-size:1em;
-	clear:left;
+	margin-left:200px;
+	line-height:1.2em;
+	font-size:0.9em;
 }
 
 #main {
-	margin-top: -40px;
+	margin-top: 0px;
 }
 
 #chart .background {
@@ -65,6 +69,8 @@ margin: 0.67em auto;
 }
 
 #footer {
+    position:absolute;
+    top:920px;
 	margin-left:150px;
 	font-size: 0.8em;
 }
@@ -89,7 +95,7 @@ circle {
 #tooltip {
 	position: absolute;
 	display:inherit;
-	
+	top:920px;
 	height:auto;
 	font-size: 12px;
 	padding:10px;
@@ -116,7 +122,7 @@ circle {
 	content:"";
 	position: absolute;
     bottom: -24px;
-    left 15%;
+    left 0%;
 	border: 12px solid transparent;
 	border-top: 12px solid #000;
 }

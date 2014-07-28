@@ -7,8 +7,8 @@ var idChart = d3.select("#chart");
 var idCaption = d3.select("#caption");
 
 //グローバル変数の設定
-var margin = {top: 40, right: 40, bottom: 60, left: 120},
-width = 960 - margin.left - margin.right;
+var margin = {top:100, right: 60, bottom: 50, left: 150},
+width = 960 - margin.left - margin.right,
 height = 500 - margin.top - margin.bottom;
 
 //ブラウザレベルのインターフェース、レスポンシブ設定
@@ -57,7 +57,7 @@ function prep(error, data1) {
 	//X軸
 	svgChart.append("g")
       .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
+      .attr("transform", "translate("+0+"," + (height) + ")")
       .call(xAxis)
     .append("text")
       .attr("class", "label")
@@ -120,7 +120,7 @@ function prep(error, data1) {
 						d3.select("#line4").text("平均年収: "+d.salary+"千円");
 						
 						var xp = parseFloat(d3.select(this).attr("cx")) + margin.left -23;
-						var yp = parseFloat(d3.select(this).attr("cy")) + margin.top - 15;
+						var yp = parseFloat(d3.select(this).attr("cy")) + margin.top -130;
 						var bgcolor = color[parseInt(category(d.id))];
 						//ツールチップの表示
 						d3.select("#tooltip")	
